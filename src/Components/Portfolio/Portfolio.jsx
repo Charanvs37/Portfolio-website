@@ -1,7 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
-import Education_Data from '../../assets/education_data';
+import Education_Data from '../../assets/Education_data.js';
 import Experience_data from '../../assets/Experience_data';
 import certifications_data from '../../assets/certifications_data.js';
 import arrow_icon from '../../assets/arrow_icon.svg';
