@@ -1,0 +1,164 @@
+/* Achievements Wrapper */
+.achievements-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px 0; /* Added padding for spacing */
+}
+
+/* Achievements Container */
+.achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 10px 100px;
+}
+
+/* Title Section */
+.achievements-title {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.achievements-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.achievements-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* Achievements Container */
+.achievements-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+/* Achievements Details (Modified to remove box) */
+.achievements-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+    max-width: 550px;
+}
+
+/* Achievements Image */
+.achievements-img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+/* Achievements Text */
+.achievements-details h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.achievements-details h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* Show More Button Container */
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -5px;
+    padding-top: 1px;
+    margin-bottom: 80px;
+}
+
+/* Show More Button */
+.show-more-btn {
+    background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 20px 36px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.show-more-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Arrow Icon Inside Button */
+.arrow-icon {
+    width: 32px;
+    height: 16px;
+    margin-left: 7px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for arrow icon */
+.show-more-btn:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .achievements-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 0 20px;
+    }
+
+    .achievements-title {
+        margin-bottom: 30px; /* Reduced space below the title */
+    }
+
+    .achievements-title h1 {
+        font-size: 50px;
+    }
+
+    .achievements-details {
+        padding: 15px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .achievements-img {
+        width: 480px; /* Reduced size */
+        height: 480px; /* Maintain aspect ratio and layout */
+        margin-top: 0; /* Removed negative margin */
+        object-fit: contain;
+    }
+
+    .show-more-btn {
+        font-size: 22px;
+        padding: 15px 30px;
+        margin-top: 30px;
+    }
+
+    .arrow-icon {
+        width: 24px;
+        height: 12px;
+    }
+}

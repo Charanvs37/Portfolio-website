@@ -1,0 +1,132 @@
+.footer {
+    margin: 50px auto; /* Center the footer on larger screens */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1200px; /* Limit the max width for larger screens */
+    padding: 0 20px; /* Add padding to prevent content from touching the edges */
+    text-align: center;
+}
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(270deg, #DF8908, #B415FF); /* Gradient Background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    flex-direction: column; /* Align everything to center */
+}
+
+.footer-top h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-top p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f1f1f1;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Footer Logo */
+.footer-top-left img {
+    width: 350px;  /* Adjust logo width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Horizontal Divider */
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+/* Left-side Footer Text */
+.footer-bottom-left {
+    color: #d4d4d4;
+    font-size: 16px;
+    flex: 1;
+    text-align: left;
+}
+
+/* Right-side Footer Links */
+.footer-bottom-right {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.footer-bottom-right p {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-bottom-right p:hover {
+    color: #B415FF; /* Highlight color on hover */
+}
+
+/* Footer Image */
+.footer img {
+    max-width: 50%;
+}
+
+/* All Rights Reserved Text */
+.footer-rights {
+    text-align: center;
+    font-size: 16px;
+    color: #d4d4d4; /* Adjust color */
+    margin-top: 10px; /* Space between the name and rights text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        margin: 20px 10px;
+    }
+
+    .footer-top {
+        padding: 30px;
+    }
+
+    .footer-top h1 {
+        font-size: 28px;
+    }
+
+    .footer-top p {
+        font-size: 18px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-bottom-left {
+        text-align: center;
+    }
+
+    .footer-bottom-right {
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

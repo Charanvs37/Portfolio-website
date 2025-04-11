@@ -1,0 +1,143 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero img {
+    margin-top: 75px;
+    height: 420px;
+    width: 420px;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ✅ NEW: Typewriter effect only for the second span */
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    animation: typing 3s steps(20), blink 0.75s step-end infinite;
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 5px;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+.hero p {
+    width: 55%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+/* ✅ Updated styles */
+.hero-connect,
+.hero-resume {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #FF6B6B 0%, #845EC2 100%);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    width: fit-content;
+}
+
+.hero-connect:hover,
+.hero-resume:hover {
+    border: 2px solid white;
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #F76C6C 0%, #A178E3 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero img {
+        margin-top: 50px;
+        width: 260px;
+        height: 260px;
+    }
+
+    .hero h1 {
+        width: 90%;
+        font-size: 50px;
+    }
+
+    .typewriter-text {
+        font-size: 32px;
+    }
+
+    .hero p {
+        width: 75%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .hero-action {
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .hero-connect,
+    .hero-resume {
+        padding: 16px 24px;
+        font-size: 18px;
+        border-radius: 40px;
+    }
+}
