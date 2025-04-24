@@ -453,178 +453,179 @@
     transform: translateX(5px);
     /* Moves arrow slightly to the right */
 }
-
-
 @media(max-width: 768px) {
 
     /* Portfolio Container */
     .portfolio {
-        gap: 40px;
-        margin: 30px auto;
-        align-items: center;
+      flex-direction: column;
+      gap: 40px;
+      margin: 30px auto;
+      align-items: center;
+      justify-content: center;
     }
+  
+    /* Section Titles */
+    .education-title h1,
+    .experience-title h1,
+    .project-title h1,
+    .certification-title h1 {
+      font-size: 40px;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .education-title img,
+  .experience-title img,
+  .project-title img,
+  .certification-title img {
+    max-width: 100px;
+    bottom: -1px; /* slightly moves below the text */
+    right: -3px;
+  }
 
     /* Education Section */
-    .education-title h1 {
-        font-size: 50px;
-        padding: 0;
-        text-align: center;
-    }
-
     .education-container {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
-        justify-content: center;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      justify-content: center;
+      margin-bottom: 40px;
     }
-
+  
     .education-format {
-        height: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; /* Optional: ensures spacing inside */
+      padding: 20px;
+      gap: 16px;
+      border-radius: 10px;
+      text-align: center;
+      width: 90%;
     }
-
+  
     .education-format h3 {
-        font-size: 24px;
+      font-size: 22px;
+      line-height: 32px;
     }
-
+  
     .education-format h2 {
-        font-size: 28px;
+      font-size: 26px;
     }
-
+  
     .education-format p {
-        font-size: 18px;
-        max-width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 100%;
     }
-
+  
     /* Experience Section */
-    .experience-title h1 {
-        font-size: 50px;
-        padding: 0;
-        text-align: center;
-    }
-
     .experience-container {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
     }
-
+  
     .experience-details {
-        padding: 40px;
-        max-width: 90%;
-        margin: 0 auto;
-        text-align: center;
+      padding: 20px;
+      gap: 14px;
+      max-width: 90%;
+      text-align: center;
     }
-
+  
     .experience-details h2 {
-        font-size: 28px;
+      font-size: 24px;
     }
-
+  
     .experience-details h3 {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
     .experience-details p {
-        font-size: 18px;
-        max-width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 100%;
     }
-
-    /* Projects Section */
-    .project-title h1 {
-        font-size: 40px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .project-title img {
-        max-width: 165px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .project-container {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 50px;
-        justify-content: center;
-    }
-
-    .project-details {
-        padding: 10px 0px;
-        max-width: 90%;
-        margin: 0 auto;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* optional for clean look */
-    }
+  
+    /* Project Section */
+        .project-container {
+            grid-template-columns: 1fr;
+            gap: 24px; /* reduced from 40px */
+            margin-bottom: 30px; /* reduced from 40px */
+            padding: 0 12px;
+        }
     
-
-    .project-img {
-        width: 180px;
-        height: 100px;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .project-text h2 {
-        font-size: 24px;
-        margin: 5px 0;
-    }
-
-    .project-text p {
-        font-size: 18px;
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    /* Show More Button */
-    .show-more-container {
-        margin: 20px auto 40px auto;
-        text-align: center;
-    }
-
-    .show-more-btn {
-        font-size: 24px;
-        padding: 15px 28px;
-    }
-
-    .arrow-icon {
-        width: 24px;
-        height: 12px;
-        margin-left: 5px;
-    }
-
+        .project-details {
+            padding: 16px; /* reduced from 20px */
+            gap: 12px; /* reduced from 16px */
+            max-width: 100%; /* full width within padding */
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    
+        .project-img {
+            width: 160px; /* reduced from 180px */
+            height: 90px; /* reduced from 100px */
+            object-fit: cover;
+            margin: 0 auto;
+            border-radius: 6px;
+        }
+    
+        .project-text h2 {
+            font-size: 20px; /* slightly smaller */
+            margin: 6px 0;
+            text-align: center;
+        }
+    
+        .project-text p {
+            font-size: 14px; /* reduced from 16px */
+            padding: 0 6px; /* tighter padding */
+            line-height: 20px;
+            text-align: center;
+        }
     /* Certifications Section */
     .certification-container {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        justify-content: center;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
     }
-
+  
     .certification-details {
-        padding: 20px;
-        max-width: 90%;
-        margin: 0 auto;
-        height: auto;
-        text-align: center;
+      padding: 20px;
+      max-width: 90%;
+      text-align: center;
     }
-
+  
     .certification-img {
-        width: 180px;
-        height: 100px;
-        display: block;
-        margin: 0 auto;
+      width: 180px;
+      height: 100px;
+      object-fit: contain;
+      margin: 0 auto;
     }
-
+  
     .certification-text h2 {
-        font-size: 24px;
+      font-size: 22px;
     }
-
+  
     .certification-text p {
-        font-size: 16px;
-        max-width: 100%;
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 100%;
     }
-}
+  
+    /* Show More Button */
+    .show-more-container {
+      margin: 20px auto 40px auto;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .show-more-btn {
+      font-size: 22px;
+      padding: 14px 26px;
+    }
+  
+    .arrow-icon {
+      width: 22px;
+      height: 12px;
+      margin-left: 5px;
+    }
+  }
+  

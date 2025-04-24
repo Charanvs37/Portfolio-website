@@ -1,23 +1,25 @@
+/* Footer Wrapper */
 .footer {
-    margin: 50px auto; /* Center the footer on larger screens */
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 1200px; /* Limit the max width for larger screens */
-    padding: 0 20px; /* Add padding to prevent content from touching the edges */
+    max-width: 1200px;
+    padding: 0 20px;
     text-align: center;
 }
 
-/* Footer Top Section */
+/* Top Section with Gradient Background */
 .footer-top {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(270deg, #DF8908, #B415FF); /* Gradient Background */
+    background: linear-gradient(270deg, #DF8908, #B415FF);
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-    flex-direction: column; /* Align everything to center */
+    text-align: center;
 }
 
 .footer-top h1 {
@@ -35,30 +37,30 @@
     line-height: 1.6;
 }
 
-/* Footer Logo */
+/* Logo Styling */
 .footer-top-left img {
-    width: 350px;  /* Adjust logo width */
-    height: auto;  /* Maintain aspect ratio */
+    width: 350px;
+    height: auto;
 }
 
-/* Horizontal Divider */
+/* Divider */
 hr {
     border: 1px solid rgba(255, 255, 255, 0.2);
     width: 80%;
     margin: 20px auto;
 }
 
-/* Footer Bottom Section */
+/* Bottom Section */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
     flex-wrap: wrap;
+    font-size: 18px;
     padding-bottom: 20px;
 }
 
-/* Left-side Footer Text */
+/* Bottom Left Text */
 .footer-bottom-left {
     color: #d4d4d4;
     font-size: 16px;
@@ -66,7 +68,7 @@ hr {
     text-align: left;
 }
 
-/* Right-side Footer Links */
+/* Bottom Right Links */
 .footer-bottom-right {
     display: flex;
     gap: 30px;
@@ -80,20 +82,20 @@ hr {
 }
 
 .footer-bottom-right p:hover {
-    color: #B415FF; /* Highlight color on hover */
+    color: #B415FF;
 }
 
-/* Footer Image */
-.footer img {
-    max-width: 50%;
-}
-
-/* All Rights Reserved Text */
+/* Rights Notice */
 .footer-rights {
     text-align: center;
     font-size: 16px;
-    color: #d4d4d4; /* Adjust color */
-    margin-top: 10px; /* Space between the name and rights text */
+    color: #d4d4d4;
+    margin-top: 10px;
+}
+
+/* Footer Image Resize (if any general footer img) */
+.footer img {
+    max-width: 50%;
 }
 
 /* Responsive Design */

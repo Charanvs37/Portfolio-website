@@ -1,17 +1,20 @@
 .hero {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     gap: 35px;
 }
 
+/* Hero Image */
 .hero img {
     margin-top: 75px;
     height: 420px;
     width: 420px;
     border-radius: 12px;
+    object-fit: cover;
 }
 
+/* Hero Main Title */
 .hero h1 {
     text-align: center;
     width: 70%;
@@ -27,7 +30,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* ✅ NEW: Typewriter effect only for the second span */
+/* Typewriter Effect */
 .typewriter-text {
     display: inline-block;
     overflow: hidden;
@@ -44,30 +47,25 @@
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 50%;
-    }
+    from { width: 0; }
+    to { width: 50%; }
 }
 
 @keyframes blink {
-    0%, 100% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: white;
-    }
+    0%, 100% { border-color: transparent; }
+    50% { border-color: white; }
 }
 
+/* Hero Description */
 .hero p {
     width: 55%;
     text-align: center;
     font-size: 22px;
     line-height: 38px;
+    color: #D8D8D8;
 }
 
+/* Call to Action Buttons */
 .hero-action {
     display: flex;
     align-items: center;
@@ -77,7 +75,6 @@
     margin-bottom: 50px;
 }
 
-/* ✅ Updated styles */
 .hero-connect,
 .hero-resume {
     display: inline-block;
@@ -85,15 +82,14 @@
     border-radius: 50px;
     background: linear-gradient(135deg, #FF6B6B 0%, #845EC2 100%);
     color: white;
-    text-align: center;
     font-size: 22px;
     font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
     min-width: 150px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
     width: fit-content;
 }
 
@@ -104,7 +100,7 @@
     background: linear-gradient(135deg, #F76C6C 0%, #A178E3 100%);
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 768px) {
     .hero img {
         margin-top: 50px;
@@ -122,7 +118,7 @@
     }
 
     .hero p {
-        width: 75%;
+        width: 80%;
         font-size: 18px;
         line-height: 30px;
     }
@@ -130,8 +126,8 @@
     .hero-action {
         gap: 16px;
         font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        flex-direction: column;
     }
 
     .hero-connect,
@@ -139,5 +135,7 @@
         padding: 16px 24px;
         font-size: 18px;
         border-radius: 40px;
+        width: 100%;
+        text-align: center;
     }
 }
